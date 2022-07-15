@@ -12,4 +12,6 @@ class Solution:
         
 
         return int(n,2)  #convert binary string to decimal
+    
+    # AUDITY GHOSH
         
