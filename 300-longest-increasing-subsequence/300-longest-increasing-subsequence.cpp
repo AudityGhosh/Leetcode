@@ -18,7 +18,7 @@ return ans.size();
         
     }
 };
-/* helpful to understand the intutuion:
+/* helpful to understand the intution:
 https://www.geeksforgeeks.org/c-program-for-longest-increasing-subsequence -> method 2
 in detail intution: https://www.youtube.com/watch?v=on2hvxBXJH4
 */
