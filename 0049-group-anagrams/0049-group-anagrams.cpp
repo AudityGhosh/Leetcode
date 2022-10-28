@@ -1,6 +1,9 @@
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        
+        
+        /* here, the sorted strings of all anagrams will be the same. So I used a map to store the unsorted strings in a vector corresponding to that sorted string. */
         int i,j,k,m,n,t;
         map<string,vector<string>>sim_s;
         for(i=0;i<strs.size();i++)
@@ -24,7 +27,7 @@ public:
         return ans;
         
         
-        
+        //AUDITY GHOSH
         
         
         
