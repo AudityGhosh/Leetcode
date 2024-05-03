@@ -7,10 +7,12 @@ public:
         while(i< n || j < m){
             while(i < n && version1[i] != '.'){
                 n1= n1*10 + version1[i] - '0';
+                cout<<i<<" "<<n1<<" n1"<<endl;
                 i++;
             }
             while(j < m && version2[j] != '.'){
                 n2 = n2*10 + version2[j] - '0';
+                cout<<j<<" "<<n2<<" n2"<<endl;
                 j++;
             }
             if(n1 < n2) return -1;
