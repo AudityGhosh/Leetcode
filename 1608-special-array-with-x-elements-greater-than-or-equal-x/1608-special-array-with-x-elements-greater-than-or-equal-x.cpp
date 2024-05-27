@@ -10,7 +10,7 @@ public:
         
         for(i=1;i<=nums.size();i++)
         {
-            auto low = lower_bound(nums.begin(),nums.end(),i);
+            auto low = lower_bound(nums.begin(),nums.end(),i); //for first index greater or equal to i
             
             if(low!=nums.end())
             {
