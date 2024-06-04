@@ -14,7 +14,6 @@ public:
         int ans=0;
         
         int jora_jora = 0;
-        int ekta_paisi = false;
         
         for(auto it:freq)
         {
@@ -27,12 +26,6 @@ public:
             {
                 jora_jora += (it.second-1);
                 freq[it.first]=1;
-                if(ekta_paisi==false)
-                {
-                    jora_jora++;
-                    ekta_paisi= true;
-                }
-                
             }
         }
         
@@ -41,14 +34,14 @@ public:
         for(auto it:freq)
             cout<<it.first<<" "<<it.second<<endl;
         
-       /* for(auto it:freq)
+        for(auto it:freq)
         {
             if(it.second==1)
             {
                 jora_jora++;
                 break;
             }
-        }*/
+        }
         
         ans=jora_jora;
         
