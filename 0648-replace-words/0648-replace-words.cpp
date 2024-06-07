@@ -1,5 +1,7 @@
 class Solution {
 public:
+    
+    //function to check if the first string is a prefix of the second string
     bool isPrefix(std::string_view prefix, std::string_view full)
 {
     return prefix == full.substr(0, prefix.size());
@@ -11,6 +13,8 @@ public:
         string ans = "";
         
        int i,j,k,m,n,t;
+        
+        //normally if you sort the vector of strings, it will sort it dictionary wise, but we don't want that, as if multiple prefixes from the dictionary match with the sentence's word, we only need to choose the one with shorter length. So I used map, length as key and value will be the vector of strings with that length. As a result those strings will be sorted alphabetically by themselves. I just need to copy all strings to another vector to iterate easily. 
         
         map<int,vector<string>>len_freq;
         for(i=0;i<dictionary.size();i++)
@@ -26,7 +30,7 @@ public:
         }
         
         
-        
+  // as the sentence contains spaces, stringstream will help us to choose word one by one. We will iterate over the sorted dictionary to get the first prefix of each word. If we get the prefix, that's okay, append it with answer string. Else, place it as it is. Beware of no spacing before first word in the answer sentence.       
         
         istringstream ss(sentence);
         string word;
